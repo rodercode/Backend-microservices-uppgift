@@ -1,3 +1,6 @@
 [submodule "config-server"]
 	path = config-server
 	url = https://github.com/rodercode/config-server.git
+[submodule "Municipal-Transport"]
+	path = Municipal-Transport
+	url = https://github.com/nilsson46/Municipal-Transport.git
