@@ -7,3 +7,6 @@
 [submodule "group-transport-api"]
 	path = group-transport-api
 	url = https://github.com/rodercode/group-transport-api.git
+[submodule "Enskild-Transport"]
+	path = Enskild-Transport
+	url = https://github.com/JuliusJak/Enskild-Transport
