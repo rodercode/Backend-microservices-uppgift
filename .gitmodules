@@ -4,3 +4,6 @@
 [submodule "Municipal-Transport"]
 	path = Municipal-Transport
 	url = https://github.com/nilsson46/Municipal-Transport.git
+[submodule "group-transport-api"]
+	path = group-transport-api
+	url = https://github.com/rodercode/group-transport-api.git
