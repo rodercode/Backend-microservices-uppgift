@@ -10,3 +10,6 @@
 [submodule "Enskild-Transport"]
 	path = Enskild-Transport
 	url = https://github.com/JuliusJak/Enskild-Transport
+[submodule "git-config"]
+	path = git-config
+	url = https://github.com/rodercode/git-config
