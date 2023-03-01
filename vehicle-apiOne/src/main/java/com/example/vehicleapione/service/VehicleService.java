@@ -22,11 +22,12 @@ public class VehicleService {
     public Optional<Vehicle> getVehicle(Long vehicleId){
         return vehicleRepo.findById(vehicleId);
     }
+
     // Get Vehicles
     public List<Vehicle> getVehicles(){
         return vehicleRepo.findAll();
     }
-    // Get Vehicle By Id
+    // Get Vehicle By GroupId
     public List<Vehicle> getVehiclesById(Long groupId){
         return vehicleRepo.getVehiclesByGroupId(groupId);
     }
@@ -36,10 +37,11 @@ public class VehicleService {
         vehicle.setGroupId(groupId);
         vehicleRepo.save(vehicle);
     }
-    // Update Vehicle State
-    public Vehicle updateVehicleState(Long vehicleId, boolean state){
+    // Update Vehicle State and assigne time
+    public Vehicle updateVehicleState(Long vehicleId, boolean state,int time){
         Vehicle vehicle = vehicleRepo.findById(vehicleId).get();
         vehicle.setAvailable(state);
+        vehicle.setAvailableIn(time);
         vehicleRepo.save(vehicle);
         return vehicle;
     }
