@@ -1,5 +1,8 @@
 package com.example.vehicleapione.exception;
 
+import com.example.vehicleapione.handler.ListEmptyException;
+import com.example.vehicleapione.handler.ResourceNotFoundException;
+import com.example.vehicleapione.handler.UniqueValidationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.ErrorResponse;
@@ -13,7 +16,7 @@ import java.time.ZonedDateTime;
 public class VehicleRestExceptionHandler {
     @ExceptionHandler
     public ResponseEntity<ErrorResponse> handleException(ListEmptyException e) {
-        ErrorResponse error = new ErrorResponse
+        ErrorResponse error = new response
                 (
                         HttpStatus.NO_CONTENT.value(),
                         e.getMessage(),
