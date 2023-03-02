@@ -1,4 +1,4 @@
-package com.example.vehicleapione.repository;
+package com.example.vehicleapione.dao;
 import com.example.vehicleapione.bean.Vehicle;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

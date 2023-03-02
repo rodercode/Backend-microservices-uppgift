@@ -23,7 +23,6 @@ public class VehicleRestController {
         Route route = new Route(1L, "Stockholm","Malmö",100);
         return new VehicleRoute(vehicle,route);
     }
-
 //     Create Vehicle Rest API
     @PostMapping
     private ResponseEntity<Vehicle> createVehicle(@RequestBody Vehicle vehicle){

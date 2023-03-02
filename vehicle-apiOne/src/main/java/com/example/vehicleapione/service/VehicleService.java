@@ -1,6 +1,6 @@
 package com.example.vehicleapione.service;
 import com.example.vehicleapione.bean.Vehicle;
-import com.example.vehicleapione.repository.VehicleRepository;
+import com.example.vehicleapione.dao.VehicleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
