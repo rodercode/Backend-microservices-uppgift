@@ -1,7 +1,5 @@
 package com.example.vehicleapione.api;
-import com.example.vehicleapione.bean.Route;
 import com.example.vehicleapione.bean.Vehicle;
-import com.example.vehicleapione.bean.VehicleRoute;
 import com.example.vehicleapione.service.VehicleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -17,12 +15,12 @@ public class VehicleRestController {
         this.vehicleService = vehicleService;
     }
     // Get Vehicle Rest API
-    @GetMapping("test")
-    private VehicleRoute vehicleDrive(){
-        Vehicle vehicle = new Vehicle(1L,"volvo","Pajala",true,0,0L);
-        Route route = new Route(1L, "Stockholm","Malmö",100);
-        return new VehicleRoute(vehicle,route);
-    }
+//    @GetMapping("test")
+//    private VehicleRoute vehicleDrive(){
+//        Vehicle vehicle = new Vehicle(1L,"volvo","Pajala",true,0,0L);
+//        Route route = new Route(1L, "Stockholm","Malmö",100);
+//        return new VehicleRoute(vehicle,route);
+//    }
 //     Create Vehicle Rest API
     @PostMapping
     private ResponseEntity<Vehicle> createVehicle(@RequestBody Vehicle vehicle){
