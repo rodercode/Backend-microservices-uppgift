@@ -1,6 +1,7 @@
 package com.example.vehicleapione.service;
 import com.example.vehicleapione.bean.Vehicle;
 import com.example.vehicleapione.dao.VehicleRepository;
+import com.example.vehicleapione.handler.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,11 +21,15 @@ public class VehicleService {
     }
     // Get Vehicle
     public Optional<Vehicle> getVehicle(Long vehicleId){
-        return vehicleRepo.findById(vehicleId);
+        if (vehicleRepo.findById(vehicleId).isEmpty())
+            throw new ResourceNotFoundException("Vehicle does not exist by this id");
+        else
+            return vehicleRepo.findById(vehicleId);
     }
 
     // Get Vehicles
     public List<Vehicle> getVehicles(){
+        if ()
         return vehicleRepo.findAll();
     }
     // Get Vehicle By GroupId
