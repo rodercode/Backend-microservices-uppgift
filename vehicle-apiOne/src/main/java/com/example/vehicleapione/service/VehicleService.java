@@ -37,7 +37,10 @@ public class VehicleService {
     }
     // Get Vehicle By GroupId
     public List<Vehicle> getVehiclesById(Long groupId){
-        return vehicleRepo.getVehiclesByGroupId(groupId);
+        if (vehicleRepo.getVehiclesByGroupId(groupId).isEmpty())
+            throw new ListEmptyException("Group with this id has no vehicles");
+        else
+            return vehicleRepo.getVehiclesByGroupId(groupId);
     }
     // Update Vehicle Group iD
     public void updateVehicleGroupId(Long vehicleId, Long groupId){
