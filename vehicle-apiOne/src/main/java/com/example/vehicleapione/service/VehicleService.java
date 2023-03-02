@@ -27,7 +27,6 @@ public class VehicleService {
         else
             return vehicleRepo.findById(vehicleId);
     }
-
     // Get Vehicles
     public List<Vehicle> getVehicles(){
         if (vehicleRepo.findAll().isEmpty())
@@ -44,9 +43,13 @@ public class VehicleService {
     }
     // Update Vehicle Group iD
     public void updateVehicleGroupId(Long vehicleId, Long groupId){
-        Vehicle vehicle = vehicleRepo.findById(vehicleId).get();
-        vehicle.setGroupId(groupId);
-        vehicleRepo.save(vehicle);
+        if (vehicleRepo.findById(vehicleId).isEmpty())
+            throw new ResourceNotFoundException("Vehicle does not exist by this id");
+        else {
+            Vehicle vehicle = vehicleRepo.findById(vehicleId).get();
+            vehicle.setGroupId(groupId);
+            vehicleRepo.save(vehicle);
+        }
     }
     // Update Vehicle State and assigne time
     public Vehicle updateVehicleState(Long vehicleId, boolean state,int time){
@@ -56,10 +59,11 @@ public class VehicleService {
         vehicleRepo.save(vehicle);
         return vehicle;
     }
-
-
     // Remove Vehicle
     public void removeVehicle(Long vehicleId) {
-        vehicleRepo.deleteById(vehicleId);
+        if (vehicleRepo.findById(vehicleId).isEmpty())
+            throw new ResourceNotFoundException("Vehicle does not exist by this id");
+        else
+            vehicleRepo.deleteById(vehicleId);
     }
 }
