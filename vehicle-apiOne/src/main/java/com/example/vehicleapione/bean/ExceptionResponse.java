@@ -1,13 +1,11 @@
 package com.example.vehicleapione.bean;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import java.time.ZonedDateTime;
-@Getter @Setter
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class ErrorResponse {
+public class ExceptionResponse {
     private int status;
     private String message;
     private ZonedDateTime data;
