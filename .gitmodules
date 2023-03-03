@@ -22,3 +22,6 @@
 [submodule "Group-Transport/vehicle-api"]
 	path = Group-Transport/vehicle-api
 	url = git@github.com:rodercode/vehicle-api.git
+[submodule "group-transport/group-walk-api"]
+	path = group-transport/group-walk-api
+	url = git@github.com:rodercode/group-walk-api.git
