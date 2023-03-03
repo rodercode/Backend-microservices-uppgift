@@ -13,3 +13,18 @@
 [submodule "git-config"]
 	path = git-config
 	url = https://github.com/rodercode/git-config
+[submodule "group-transport/vehicle-api"]
+	path = group-transport/vehicle-api
+	url = git@github.com:rodercode/vehicle-api.git
+[submodule "Group-Transport/group-transport-api"]
+	path = Group-Transport/group-transport-api
+	url = git@github.com:rodercode/group-transport-api.git
+[submodule "Group-Transport/vehicle-api"]
+	path = Group-Transport/vehicle-api
+	url = git@github.com:rodercode/vehicle-api.git
+[submodule "group-transport/group-walk-api"]
+	path = group-transport/group-walk-api
+	url = git@github.com:rodercode/group-walk-api.git
+[submodule "Group-Transport/group-walk-api"]
+	path = Group-Transport/group-walk-api
+	url = git@github.com:rodercode/group-walk-api.git
