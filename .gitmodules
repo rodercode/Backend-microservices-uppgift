@@ -13,3 +13,6 @@
 [submodule "git-config"]
 	path = git-config
 	url = https://github.com/rodercode/git-config
+[submodule "group-transport/vehicle-api"]
+	path = group-transport/vehicle-api
+	url = git@github.com:rodercode/vehicle-api.git
