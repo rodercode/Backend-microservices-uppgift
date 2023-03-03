@@ -25,3 +25,6 @@
 [submodule "group-transport/group-walk-api"]
 	path = group-transport/group-walk-api
 	url = git@github.com:rodercode/group-walk-api.git
+[submodule "Group-Transport/group-walk-api"]
+	path = Group-Transport/group-walk-api
+	url = git@github.com:rodercode/group-walk-api.git
