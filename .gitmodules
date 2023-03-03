@@ -16,3 +16,9 @@
 [submodule "group-transport/vehicle-api"]
 	path = group-transport/vehicle-api
 	url = git@github.com:rodercode/vehicle-api.git
+[submodule "Group-Transport/group-transport-api"]
+	path = Group-Transport/group-transport-api
+	url = git@github.com:rodercode/group-transport-api.git
+[submodule "Group-Transport/vehicle-api"]
+	path = Group-Transport/vehicle-api
+	url = git@github.com:rodercode/vehicle-api.git
